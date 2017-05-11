@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Slippy Maps</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/Input.css">
+</head>
+<body>
+    <h2>Maps</h2>
+    <form name="inputform">
+        <label>
+            Choose Location:
+            <select id="dropdown" name="selection">
+                <option value="1" selected>Space Needle</option>
+                <option value="2">Bellevue Botanical Garden</option>
+                <option value="3">Istanbul</option>
+                <option value="4">Yosemite</option>
+                <option value ="5">
+                    Monmouth</option>
+                    <option value="6">Renton</option>
+            </select>
+        </label>
+        <input id="submit" type="button" value="Submit">
+    </form>
+    <h3>The Map</h3>
+    <div id="google-map"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+            crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6E8GGn6ndxczOVfytTy7-tGL3FQlLujc&callback=initMap" async defer></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
